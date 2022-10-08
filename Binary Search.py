@@ -17,9 +17,9 @@ def BinaryS(value):
     else:
         return -1
     
-x = input ("Enter an alphabet: ")
-answer = BinaryS(x)
+value = input ("Enter an alphabet: ")
+answer = BinaryS(value)
 if answer != -1:
-    print ("The alphabet", x, "is found at", answer)
+    print ("The alphabet", value, "is found at", answer)
 else:
-    print ("The alphabet", x, "is not present in the array")
+    print ("The alphabet", value, "is not present in the array")
