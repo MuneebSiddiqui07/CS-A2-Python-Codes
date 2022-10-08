@@ -1,7 +1,7 @@
 alpha = ['a','b','c','d','e','f','g','h','i','j']
 
 def BinaryS(value):
-    LB = 0
+    LB = 0 
     UB = 9
     isfound = False
     while UB>=LB and isfound == False:
@@ -19,7 +19,7 @@ def BinaryS(value):
     
 x = input ("Enter an alphabet: ")
 answer = BinaryS(x)
-if x != -1:
+if answer != -1:
     print ("The alphabet", x, "is found at", answer)
-else:
+elif answer==-1:
     print ("The alphabet", x, "is not present in the array")
