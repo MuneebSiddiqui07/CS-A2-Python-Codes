@@ -21,5 +21,5 @@ x = input ("Enter an alphabet: ")
 answer = BinaryS(x)
 if answer != -1:
     print ("The alphabet", x, "is found at", answer)
-elif answer==-1:
+else:
     print ("The alphabet", x, "is not present in the array")
