@@ -4,4 +4,5 @@ def factorial(num):
         f= f*i
     return f
 x = int(input("Enter number whose factorial you would like to find: "))
-print("Your answer is: ",factorial(x))
+answer = factorial(x)
+print("Your answer is: ",answer)
