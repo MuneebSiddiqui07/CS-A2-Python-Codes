@@ -6,9 +6,9 @@ def RecursiveBS(UB, LB, Val):
         if Val == SearchArray[mid]:
             return mid
         elif SearchArray[mid] < Val:
-            return RecursiveBS[UB, mid + 1, Val]
+            return RecursiveBS(UB, mid + 1, Val)
         elif SearchArray[mid] > Val:
-            return RecursiveBS[mid - 1, LB, Val]
+            return RecursiveBS(mid - 1, LB, Val)
 
 SearchArray = ["a", "b", "c", "d"]
 LB = 0
