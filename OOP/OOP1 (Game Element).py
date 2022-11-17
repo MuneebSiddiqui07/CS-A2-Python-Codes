@@ -7,9 +7,9 @@ class GameElement:
         self.__ImageFileName = ifn
 
     def GetDetails(self):
-        details= "PositionX: " + str(self.__PositionX) + ", " + "PositionY: " + \
-            str(self.__PositionY) + ", " + "Width: " + str(self.__Width) + ", " + \
-            "Height: " + str(self.__Height) + ", " + "ImageFileName: " + self.__ImageFileName + ", "
+        details= "PositionX: " + str(self.__PositionX) +  "\n" +  "PositionY: " + \
+            str(self.__PositionY) + "\n"  + "Width: " + str(self.__Width) + "\n" + \
+            "Height: " + str(self.__Height) + "\n" + "ImageFileName: " + self.__ImageFileName + "\n"
         return details
 
 class Scenery(GameElement):
@@ -25,7 +25,7 @@ class Scenery(GameElement):
             return 0
 
     def GetScenery(self):
-        details = super().GetDetails() + "Cause Damage: " + str(self.__CauseDamage) + ", " + \
+        details = super().GetDetails() + "Cause Damage: " + str(self.__CauseDamage) + "\n" + \
             "Damage Points: " + str(self.__DamagePoints)
         return details
 
